@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Práctica clase 2</title>
+  </head>
+  <body>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script 
+      src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+    const app = document.getElementById("root");
+
+    const Container = () => {
+        return (
+            <div>
+            <h1 key ={1}>Con lo visto hasta ahora</h1>
+            <h2 key ={2}>Replica este HTML</h2>
+            <h3 key ={3}>Usando</h3>
+            <h4 key ={4}>React.js</h4>
+            <footer key ={5}>Suerte!</footer>
+            </div>
+        );
+    };
+
+      ReactDOM.render(React.createElement(Container), app);
+    </script>
+  </body>
+</html>
