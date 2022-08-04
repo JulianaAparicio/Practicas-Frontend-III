@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
