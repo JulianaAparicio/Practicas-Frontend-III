@@ -1,9 +1,23 @@
+li {
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    border: 2px solid black;
+    background-color: salmon;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    width: 20rem;
+}
+
 .main{
     display: flex;
     align-items: flex-start;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-evenly;
-}
