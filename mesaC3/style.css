@@ -1,3 +1,7 @@
+li {
+    list-style-type: none;
+}
+
 .menu {
     display: flex;
     justify-content: center;
@@ -10,10 +14,6 @@
     font-weight: bold;
     text-align: center;
     width: 20rem;
-}
-
-li {
-    list-style-type: none;
 }
 
 .main{
