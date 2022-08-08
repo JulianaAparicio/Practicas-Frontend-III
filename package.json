@@ -1,0 +1,19 @@
+{
+  "name": "mi-primer-app-clase4",
+  "version": "1.0.0",
+  "description": "Repositorio contenedor de diversas prácticas con React para la materia Frontend III:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianaAparicio/Practicas-Frontend-III.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianaAparicio/Practicas-Frontend-III/issues"
+  },
+  "homepage": "https://github.com/JulianaAparicio/Practicas-Frontend-III#readme"
+}
