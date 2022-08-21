@@ -1,0 +1,28 @@
+.container {
+    padding-top: 10vh;
+    background-color: #541320;
+    text-align: center;
+    height: 90vh;
+    font-weight: 800;
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    margin: auto;
+  }
+  
+  .container :nth-child(1) {
+    width: 200px;
+  }
+  
+  .container :nth-child(2) {
+    width: 200px;
+  }
+  
+  .btn {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
