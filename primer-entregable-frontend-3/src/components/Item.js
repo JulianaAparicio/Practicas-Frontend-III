@@ -30,7 +30,7 @@ export default function Item({name, description, stock, funcionItem}) {
     <div className='producto'>
       <h3>{name}</h3>
       <p>{description}</p>
-      <h5>En stock: { stock > 0 ? itemStock : <span>agotado</span>}</h5>
+      <h5>En stock: { itemStock != 0 ? itemStock : <span>agotado</span>}</h5>
       { counter < itemStock ? <button onClick={handleStock}> Comprar </button> : <button disabled >Sin Stock</button>}
     </div>
   )
