@@ -7,31 +7,22 @@
 // Item.
 // PROPS: App deberá pasar por props lo necesario a sus componentes internos.
 
-import { useState, useEffect } from "react";
-import Cabecera from "./components/Cabecera";
-import Listado from "./components/Listado";
+import { useState } from "react"
+import Cabecera from "./components/Cabecera"
+import Listado from "./components/Listado"
 
 function App() {
 
   const [totalCounter, setTotalCounter] = useState(0)
 
-  useEffect(() => {
-    console.log("Mounting")
-    setTotalCounter(totalCounter + 1)
-    return()=>{
-      console.log("Unmounting");
-    }
-
-  }, []);
-
-  const increaseTotal = (counter) => {
-      setTotalCounter(counter)
+  const totalAmount = (counter) => {
+    setTotalCounter(totalCounter + counter)
   }
 
   return (
     <div className="App">
-      <Cabecera totalCounter={0} />
-      <Listado totalCounter={0} totalIncrease={increaseTotal} />
+      <Cabecera total={totalCounter} />
+      <Listado functionAmount={totalAmount} />
     </div>
   );
 }

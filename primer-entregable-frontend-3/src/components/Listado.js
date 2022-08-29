@@ -9,11 +9,11 @@ import React from "react"
 import data from "./data.json"
 import Item from "./Item"
 
-const Listado = ({totalCounter, totalIncrease}) => {
+const Listado = ({functionAmount}) => {
   return (
     <div className='container'>
       {
-        data.map((item) => <Item key={(item.id)} name={item.producto.nombre} description={item.producto.descripcion} stock={item.stock} increase={totalIncrease}/>)
+        data.map((item) => <Item key={(item.id)} name={item.producto.nombre} description={item.producto.descripcion} stock={item.stock} funcionItem={functionAmount}/>)
       }
     </div>
   )
