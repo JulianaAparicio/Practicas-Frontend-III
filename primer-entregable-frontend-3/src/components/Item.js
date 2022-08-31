@@ -12,16 +12,13 @@ import { useState } from "react";
 
 export default function Item({name, description, stock, funcionItem}) {
 
-  const [counter, setCounter] = useState(0)
+  const [counter, setCounter] = useState(1)
   const [itemStock, setItemStock] = useState(stock)
-
-    const handleCounter = () => {
-      setCounter(counter + 1)
-    }
 
     const handleStock = () => {
     setItemStock(itemStock - 1)
-    funcionItem(handleCounter())
+    setCounter(counter + 1)
+    funcionItem(counter)
   }
   
   return (

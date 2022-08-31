@@ -16,7 +16,7 @@ function App() {
   const [totalCounter, setTotalCounter] = useState(0)
 
   const increaseTotal = (count) => {
-    setTotalCounter(totalCounter + count)  
+    setTotalCounter(count)  
   }
 
   return (
