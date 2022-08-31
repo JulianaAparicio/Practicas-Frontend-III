@@ -13,16 +13,19 @@ import Listado from "./components/Listado"
 
 function App() {
 
+  const [itemCounter, setItemCounter] = useState(0)
   const [totalCounter, setTotalCounter] = useState(0)
 
-  const increaseTotal = (count) => {
-    setTotalCounter(count)  
+  const increaseItem = (count) => {
+    setItemCounter(count)
+    setTotalCounter(itemCounter)  
   }
-
+  
+  
   return (
     <div className="App">
       <Cabecera total={totalCounter} />
-      <Listado functionAmount={increaseTotal} />
+      <Listado functionAmount={increaseItem} />
     </div>
   );
 }
