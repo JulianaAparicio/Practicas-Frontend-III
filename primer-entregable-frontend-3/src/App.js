@@ -16,9 +16,13 @@ function App() {
   const [totalCounter, setTotalCounter] = useState(0)
 
   const increaseItem = (count) => {
-    setTotalCounter(count);
+    if (totalCounter === 0) {
+      setTotalCounter(count);
+    } else {
+      setTotalCounter(totalCounter + count);
+    }
   }
- 
+  
   
   return (
     <div className="App">

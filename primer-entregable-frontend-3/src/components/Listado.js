@@ -13,7 +13,7 @@ const Listado = ({functionAmount}) => {
   return (
     <div className='container'>
       {
-        data.map((item) => <Item key={(item.id)} name={item.producto.nombre} description={item.producto.descripcion} stock={item.stock} funcionItem={functionAmount}/>)
+        data.map((item) => <Item key={(item.id)} name={item.producto.nombre} description={item.producto.descripcion} stock={item.stock} functionItem={functionAmount}/>)
       }
     </div>
   )
