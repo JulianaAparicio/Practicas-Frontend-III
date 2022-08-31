@@ -13,14 +13,12 @@ import Listado from "./components/Listado"
 
 function App() {
 
-  const [itemCounter, setItemCounter] = useState(0)
   const [totalCounter, setTotalCounter] = useState(0)
 
   const increaseItem = (count) => {
-    setItemCounter(count)
-    setTotalCounter(itemCounter)  
+    setTotalCounter(count);
   }
-  
+ 
   
   return (
     <div className="App">
