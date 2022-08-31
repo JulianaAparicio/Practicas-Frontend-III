@@ -17,7 +17,7 @@ export default function Item({name, description, stock, functionItem}) {
 
   const handleStock = () => {
     setItemStock(itemStock - 1)
-    setCounter(counter + 1)
+    setCounter(counter)
   }
   
   return (
@@ -26,7 +26,7 @@ export default function Item({name, description, stock, functionItem}) {
       <p>{description}</p>
       <h5>En stock: { itemStock !== 0 ? itemStock : <span>agotado</span>}</h5>
       { itemStock !== 0 ? 
-      <button onClick={() => {handleStock();functionItem(counter)}}> Comprar </button>
+      <button onClick={() => {handleStock();functionItem(counter + 1)}}> Comprar </button>
        : <button disabled >Sin Stock</button>}
     </div>
   )
