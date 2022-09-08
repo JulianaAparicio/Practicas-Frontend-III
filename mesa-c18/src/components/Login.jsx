@@ -1,28 +1,31 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import "../styles/Login.css"
 
 const Login = () => {
 
-    const handleChange = (event, key) => this.setState({[key]: event.target.value});
+    const [state, setState] = useState({username: "", password: ""})
+
+    const handleChange = (event, key) => setState({[key]: event.target.value});
     
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log("Logueado");
     }
 
-    const {password, username} = this.state
+    const {password, username} = state
+
     return (
             <form className="login__container">
                 <div>
                     <label className="labelStyle" >Username:</label>
-                    <input  type="text" value={username} onChange={(event) => this.handleChange(event,"username")}  />
+                    <input  type="text" value={username} onChange={(event) => handleChange(event,"username")}  />
                 </div>
                 <div>
                     <label className="labelStyle" >Password:</label>
-                    <input type="password" value={password} onChange={(event) => this.handleChange(event,"password")}  />
+                    <input type="password" value={password} onChange={(event) => handleChange(event,"password")}  />
                 </div>
                 <div>
-                    <button onClick={this.handleSubmit}>Submit</button>
+                    <button onClick={handleSubmit}>Submit</button>
                 </div>
             </form>
     )
