@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import "../styles/Search.css"
 import items from "../items.json"
+import { withRouter } from 'react-router-dom'
+
 
 const Search = () => {
 
@@ -36,4 +38,4 @@ const Search = () => {
     )
 }
 
-export default Search;
+export default withRouter(Search);
