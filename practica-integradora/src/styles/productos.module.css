@@ -1,7 +1,0 @@
-.productos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-    max-height: 500px;
-  }
